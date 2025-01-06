@@ -5,7 +5,7 @@ import re
 
 # http://code.activestate.com/recipes/135435-sort-a-string-using-numeric-order/
 def string_split_by_numbers(x):
-    r = re.compile('(\d+)')
+    r = re.compile(r'(\d+)')
     l = r.split(x)
     return [int(y) if y.isdigit() else y for y in l]
 
